@@ -1,0 +1,34 @@
+###
+POST http://127.0.0.1:8000/api/rooms/
+Content-Type: application/json
+
+
+
+{
+    "room_number": 101,
+    "room_type": "AC",
+    "customer_name": "Angel",
+    "price": 2500,
+    "status": "Booked"
+}
+
+###
+GET http://127.0.0.1:8000/api/rooms/
+
+###
+GET http://127.0.0.1:8000/api/rooms/1/
+
+###
+PUT http://127.0.0.1:8000/api/rooms/1/
+Content-Type: application/json
+
+{
+    "room_number": 101,
+    "room_type": "Deluxe",
+    "customer_name": "Angel",
+    "price": 3500,
+    "status": "Booked"
+}
+
+###
+DELETE http://127.0.0.1:8000/api/rooms/1/
